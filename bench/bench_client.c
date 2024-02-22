@@ -74,7 +74,7 @@ static memcached_st *memc_new()
   unsigned long long getter;
 
   pthread_mutex_lock (&printmutex);
-  sprintf(config_string, "--SERVER=%s --BINARY-PROTOCOL", serverip);
+  sprintf(config_string, "--SERVER=%s:11211 --BINARY-PROTOCOL", serverip);
   printf("config_string = %s\n", config_string);
   memc = memcached(config_string, strlen(config_string));
 

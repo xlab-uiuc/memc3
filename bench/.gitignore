@@ -1,0 +1,4 @@
+bench_client
+bench_trace_gen
+*.load
+*.run
